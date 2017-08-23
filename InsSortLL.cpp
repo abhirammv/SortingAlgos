@@ -28,6 +28,7 @@ void PrintList(Node* head)
         cout<<start->data<<" ";
         start = start->next;
     }
+    cout<<endl;
 }
 
 void insert(Node** head_sorted, Node* newNode)
@@ -78,9 +79,9 @@ int main()
     push(&l1, 4);
     push(&l1, 3);
     push(&l1, 30);
-
+    cout<<"Initial List:"<<endl;
     PrintList(l1);
-
+    cout<<endl<<"Sorted: "<<endl;
     InsertionSort(&l1);
     PrintList(l1);
 
